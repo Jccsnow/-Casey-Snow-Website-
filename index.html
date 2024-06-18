@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casey Snow - Author & Occupational Therapist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            padding: 2em;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        .form-group {
+            margin-bottom: 1em;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.75em 1.5em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Casey Snow</h1>
+    <p>Author & Occupational Therapist</p>
+</header>
+
+<div class="container">
+    <div class="section" id="about-me">
+        <h2>About Me</h2>
+        <p>Hello! I'm Casey Snow, an author and occupational therapist. I have been in private practice for 18 years, specializing in sensory integrative techniques to help dissolve anxiety and depression. My work focuses on using the senses to influence the brain and create new pathways, an outside-in method that has proven to be highly effective.</p>
+    </div>
+
+    <div class="section" id="my-books">
+        <h2>My Books</h2>
+        <p>I have written a series of books called <em>Dis Solve Anxiety</em> and <em>Dis Solve Depression</em>. These books provide practical guidance on using sensory techniques to manage and overcome anxiety and depression.</p>
+    </div>
+
+    <div class="section" id="about-company">
+        <h2>About Life Balance Inc.</h2>
+        <p>Life Balance Inc. is dedicated to providing sensory profile assessments and personalized therapy sessions. Our approach is designed to help individuals understand their sensory needs and develop effective strategies for managing anxiety and depression.</p>
+        <h3>Request a Sensory Profile Assessment</h3>
+        <form id="assessment-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <p>For a fee of $120 USD, you will receive a sensory profile assessment interpreted by a therapist. After receiving your results, you can schedule a Zoom session for further assistance.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('assessment-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for submitting your information. You will receive an email with the next steps shortly.');
+        // Here you would typically handle the form submission to the server.
+    });
+</script>
+
+</body>
+</html>
